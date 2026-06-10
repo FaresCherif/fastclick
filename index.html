@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fast Click — Jeu</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <div class="container">
+    <h1>Fast Click</h1>
+    <div id="controls">
+      <button id="startBtn">Démarrer</button>
+      <button id="nextBtn" style="display:none">Suivant</button>
+    </div>
+
+    <div id="imageArea" class="image-area" aria-live="polite">Appuyez sur Démarrer</div>
+    <div id="result" class="result"></div>
+
+    <div class="stats">
+      <div>Meilleur: <span id="best">—</span> ms</div>
+      <div>Essais: <span id="count">0</span></div>
+    </div>
+
+    <div class="session-timer">Temps session: <span id="sessionTimer">0 ms</span></div>
+
+    <p class="hint">Appuyez sur la touche correspondant au symbole affiché.</p>
+  </div>
+
+  <script type="module" src="js/bootstrap.js"></script>
+</body>
+</html>
